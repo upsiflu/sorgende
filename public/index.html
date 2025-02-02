@@ -6,10 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sorgende Netze Berlin-Buch</title>
   <style media="screen">
+    :root {
+      --green: rgb(24, 99, 66);
+      --magenta: rgb(239, 67, 136);
+    }
+
     html {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.3rem;
-      background: radial-gradient(circle, rgba(47, 7, 83, 1) 0%, rgba(16, 70, 17, 1) 100%);
+      background: radial-gradient(circle, var(--green) 0%, var(--magenta) 100%);
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(rgba(0, 0, 20, .6), rgba(0, 0, 10, .3));
     }
 
     body>* {
@@ -18,17 +28,19 @@
     }
 
     a:link {
-      color: #77f;
+      color: #aaf;
       text-decoration-thickness: 1px;
       text-decoration-style: wavy;
+      text-shadow: 1px 1px 4px black;
+      ;
     }
 
     a:visited {
-      color: #86a;
+      color: #a6f;
     }
 
     a:hover {
-      color: #99f;
+      color: #bbf;
       text-decoration-thickness: 9px;
       text-decoration-color: blue;
     }
@@ -37,10 +49,14 @@
       transition: all .2s;
     }
 
-    h1,
     h2,
     h3 {
       color: lightcoral;
+    }
+
+    h1 {
+      color: lightgreen;
+      line-height: 1em;
     }
 
     body {
@@ -54,8 +70,8 @@
 </head>
 
 <body>
-  <h1>
-    Im Dazwischen: Sorgende Netzwerke Buch
+  <h1 style="position:sticky; top: 1rem; background:rgb(89, 30, 69);">
+    <a href="./index.html">Im Dazwischen: Sorgende Netzwerke Buch</a>
   </h1>
   <p>
     <b>Sorgearbeit</b> umfasst alle Tätigkeiten, die das körperliche, seelische und soziale Wohlbefinden anderer fördern

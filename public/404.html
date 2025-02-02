@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sorgende Netze Berlin-Buch</title>
   <style media="screen">
+    :root{
+      --green: rgb(24, 99, 66);
+      --magenta: rgb(239, 67, 136);
+    }
     html {
       font-size: 18px;
       line-height: 1.3rem;
-      background: radial-gradient(circle, rgba(47, 7, 83, 1) 0%, rgba(16, 70, 17, 1) 100%);
+      background: radial-gradient(circle, var(--green) 0%, var(--magenta) 100%), linear-gradient(from rgba(0,20,0,200), to rgba(0,20,0,100));
     }
 
     body>* {
