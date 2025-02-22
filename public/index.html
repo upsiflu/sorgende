@@ -10,21 +10,21 @@
     :root {
       --green: rgb(24, 99, 66);
       --magenta: rgb(239, 67, 136);
+      background: radial-gradient(circle in oklab, var(--magenta) 35%, var(--green) 40%, var(--green) 85%, var(--magenta) 90%);
     }
 
     html {
       font-size: 20px;
       line-height: 1.3rem;
-      background: radial-gradient(circle, var(--green) 0%, var(--magenta) 100%);
     }
 
-    body {
-      margin: 0;
-      background: linear-gradient(rgba(0, 0, 20, .6), rgba(0, 0, 10, .3));
+    ul {
+      background: radial-gradient(in oklab, var(--green) 50%, transparent 72%);
+      text-shadow: .1em .1em 0 black, .075em .075em 0 black, .05em .05em 0 black, .025em .025em 0 black;
     }
 
     body>* {
-      max-width: 40rem;
+      max-width: 35rem;
       color: white;
     }
 
@@ -32,12 +32,11 @@
       color: #aaf;
       text-decoration-thickness: 1px;
       text-decoration-style: wavy;
-      text-shadow: 1px 1px 4px black;
-      ;
+      text-shadow: .1em .1em 0 black, .075em .075em 0 black, .05em .05em 0 black, .025em .025em 0 black;
     }
 
     a:visited {
-      color: #a6f;
+      color: rgb(253, 145, 255);
     }
 
     a:hover {
@@ -52,7 +51,7 @@
 
     h2,
     h3 {
-      color: lightcoral;
+      color: color-mix(in oklab, white, var(--magenta));
     }
 
     h1 {
@@ -62,11 +61,18 @@
     }
 
     body {
+      margin: 0;
+      padding: 4rem 1rem;
+      padding-bottom: 20rem;
+
+      /* Anordnung der Elemente */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-items: center;
-      padding: 4rem;
+
+      background: linear-gradient(in oklab, rgba(0, 0, 20, .6), rgba(0, 0, 10, .3));
+
     }
   </style>
 </head>
@@ -74,8 +80,17 @@
 <html lang="de">
 
 <body>
-  <h1 style="position:sticky; top: -1em;">
-    <a style="background:rgb(89, 30, 69);" href="./index.html">Im Dazwischen: Sorgende Netzwerke Berlin‑Buch</a>
+  <h1 style="
+    position:sticky; 
+    top: -1em;
+    ">
+    <a style="
+        background: var(--green);
+        margin: -1rem;
+        box-shadow: -1rem 1rem var(--green);
+      " href="./index.html">
+      Im Dazwischen: Sorgende Netzwerke Berlin‑Buch
+    </a>
   </h1>
   <p>
     <b>Sorgearbeit</b> umfasst alle Tätigkeiten, die das körperliche, seelische und soziale Wohlbefinden anderer fördern
